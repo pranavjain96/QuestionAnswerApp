@@ -16,7 +16,8 @@ public class Main {
         options.add(a);
         options.add(b);
         options.add(c);
-        Answer ans=new Answer(options);
+        Answer ans=new Answer();
+        ans.setAnswers(options);
         Question q=new Question(question,ans);
         Topic topic=new SubTopic("Fruits",q);
         System.out.print(topic);
